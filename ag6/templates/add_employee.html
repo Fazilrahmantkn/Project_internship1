@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+</head>
+<body>
+
+<h1>Add Employee</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    Name:
+    <input type="text" name="name"><br><br>
+
+    Age:
+    <input type="number" name="age"><br><br>
+
+    Salary:
+    <input type="number" step="0.01" name="salary"><br><br>
+
+    <button type="submit">
+        Save
+    </button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Doctor</title>
+</head>
+<body>
+
+<h1>Add Doctor</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    Name:
+    <input type="text" name="name"><br><br>
+
+    Specialization:
+    <input type="text" name="specialization"><br><br>
+
+    Experience:
+    <input type="number" name="experience"><br><br>
+
+    <button type="submit">Save</button>
+
+</form>
+
+</body>
+</html>

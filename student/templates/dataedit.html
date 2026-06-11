@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<body>
+
+<h2>Edit Student</h2>
+
+<form method="POST" action="{% url 'update' student.id %}">
+    {% csrf_token %}
+
+    <label>Name:</label><br>
+    <input type="text" name="name" value="{{ student.name }}"><br><br>
+
+    <label>Age:</label><br>
+    <input type="number" name="age" value="{{ student.age }}"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" value="{{ student.email }}"><br><br>
+
+    <input type="submit" value="Update">
+</form>
+
+<br>
+
+<a href="{% url 'students' %}">Back</a>
+
+</body>
+</html>

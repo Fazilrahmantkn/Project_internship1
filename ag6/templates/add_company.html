@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Company</title>
+</head>
+<body>
+
+<h1>Add Company</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    Name:
+    <input type="text" name="name"><br><br>
+
+    Location:
+    <input type="text" name="location"><br><br>
+
+    Employees:
+    <input type="number" name="employees"><br><br>
+
+    <button type="submit">Save</button>
+
+</form>
+
+</body>
+</html>

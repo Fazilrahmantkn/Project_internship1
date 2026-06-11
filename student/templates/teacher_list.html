@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teachers</title>
+</head>
+<body>
+
+<h2>Teachers</h2>
+
+<a href="{% url 'teacher_add' %}">
+    Add Teacher
+</a>
+
+<br><br>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Email</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+
+    {% for teacher in teachers %}
+    <tr>
+        <td>{{ teacher.name }}</td>
+        <td>{{ teacher.subject }}</td>
+        <td>{{ teacher.email }}</td>
+
+        <td>
+            <a href="{% url 'teacher_update' teacher.pk %}">
+                Edit
+            </a>
+        </td>
+
+        <td>
+            <a href="{% url 'teacher_delete' teacher.pk %}">
+                Delete
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

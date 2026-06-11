@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Companies</title>
+</head>
+<body>
+
+<h1>Companies</h1>
+
+<a href="{% url 'add_company' %}">
+    Add Company
+</a>
+
+<table border="1">
+<tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Employees</th>
+</tr>
+
+{% for company in companies %}
+<tr>
+    <td>{{ company.name }}</td>
+    <td>{{ company.location }}</td>
+    <td>{{ company.employees }}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
