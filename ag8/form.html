@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete HTML Form Example</title>
+</head>
+<body style="font-family: Arial, sans-serif; background:#f4f4f4; padding:20px;">
+
+    <form style="max-width:700px; margin:auto; background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px #ccc;">
+
+        <h2 style="text-align:center; color:#333;">Registration Form</h2>
+
+        <!-- Text Input -->
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your name"
+               style="width:100%; padding:8px; margin:5px 0 15px;"><br>
+
+        <!-- Email -->
+        <label>Email:</label><br>
+        <input type="email" placeholder="example@email.com"
+               style="width:100%; padding:8px; margin:5px 0 15px;"><br>
+
+        <!-- Password -->
+        <label>Password:</label><br>
+        <input type="password"
+               style="width:100%; padding:8px; margin:5px 0 15px;"><br>
+
+        <!-- Number -->
+        <label>Age:</label><br>
+        <input type="number" min="1" max="120"
+               style="width:100%; padding:8px; margin:5px 0 15px;"><br>
+
+        <!-- Date -->
+        <label>Date of Birth:</label><br>
+        <input type="date"
+               style="padding:8px; margin:5px 0 15px;"><br><br>
+
+        <!-- Time -->
+        <label>Preferred Time:</label><br>
+        <input type="time"
+               style="padding:8px; margin:5px 0 15px;"><br><br>
+
+        <!-- Color -->
+        <label>Favorite Color:</label><br>
+        <input type="color"
+               style="margin:5px 0 15px;"><br><br>
+
+        <!-- Range -->
+        <label>Satisfaction Level:</label><br>
+        <input type="range" min="0" max="10"
+               style="width:100%; margin:5px 0 15px;"><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Skills:</label><br>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JavaScript
+        <input type="checkbox"> Python
+        <br><br>
+
+        <!-- Select Dropdown -->
+        <label>Country:</label><br>
+        <select style="width:100%; padding:8px; margin:5px 0 15px;">
+            <option>Select Country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+        </select>
+
+        <!-- Multi Select -->
+        <label>Languages Known:</label><br>
+        <select multiple
+                style="width:100%; padding:8px; margin:5px 0 15px; height:100px;">
+            <option>English</option>
+            <option>Malayalam</option>
+            <option>Hindi</option>
+            <option>Tamil</option>
+        </select>
+
+        <!-- Textarea -->
+        <label>Address:</label><br>
+        <textarea rows="4"
+                  style="width:100%; padding:8px; margin:5px 0 15px;"></textarea>
+
+        <!-- File Upload -->
+        <label>Upload Resume:</label><br>
+        <input type="file"
+               style="margin:5px 0 15px;"><br><br>
+
+        <!-- URL -->
+        <label>Website:</label><br>
+        <input type="url" placeholder="https://example.com"
+               style="width:100%; padding:8px; margin:5px 0 15px;"><br>
+
+        <!-- Search -->
+        <label>Search:</label><br>
+        <input type="search" placeholder="Search here..."
+               style="width:100%; padding:8px; margin:5px 0 15px;"><br>
+
+        <!-- Telephone -->
+        <label>Phone Number:</label><br>
+        <input type="tel" placeholder="+91 9876543210"
+               style="width:100%; padding:8px; margin:5px 0 15px;"><br>
+
+        <!-- Hidden Field -->
+        <input type="hidden" value="user123">
+
+        <!-- Datalist -->
+        <label>Favorite Browser:</label><br>
+        <input list="browsers"
+               style="width:100%; padding:8px; margin:5px 0 15px;">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+
+        <!-- Progress -->
+        <label>Profile Completion:</label><br>
+        <progress value="75" max="100"></progress>
+        <br><br>
+
+        <!-- Submit & Reset -->
+        <input type="submit" value="Submit"
+               style="background:#28a745; color:white; border:none; padding:10px 20px; cursor:pointer; border-radius:5px;">
+
+        <input type="reset" value="Reset"
+               style="background:#dc3545; color:white; border:none; padding:10px 20px; cursor:pointer; border-radius:5px;">
+
+    </form>
+
+</body>
+</html>
