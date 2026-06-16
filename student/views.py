@@ -71,7 +71,18 @@ def teacher_delete(request, id):
     teacher = get_object_or_404(Teacher, id=id)
     teacher.delete()
     return redirect(teacher_list)
+
 """
+def home(request):
+    student_count = Student.objects.count()
+    teacher_count = Teacher.objects.count()
+
+    context = {
+        'student_count': student_count,
+        'teacher_count': teacher_count,
+    }
+
+    return render(request, 'home.html', context)
 from django.http import HttpResponse
 from django.shortcuts import (
     render,

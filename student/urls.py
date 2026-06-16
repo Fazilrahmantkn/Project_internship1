@@ -2,8 +2,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('', views.home, name='home'),
 
-    path('', views.index, name='index'),
+    path('index/', views.index, name='index'),
 
     path('hello/', views.hello_world, name='hello_world'),
 
@@ -60,3 +61,52 @@ urlpatterns = [
         name='teacher_delete'
     ),
 ]
+
+"""
+from django.urls import path
+from . import views
+
+urlpatterns = [
+
+    # Home
+    path('', views.home, name='home'),
+
+    # Student
+    path('studentregister/', views.studentregister, name='studentregister'),
+
+    path('studyview/', views.studyview, name='studyview'),
+
+    path('editdata/<int:id>/',
+         views.editdata,
+         name='editdata'),
+
+    path('dataupdate/<int:id>/',
+         views.dataupdate,
+         name='dataupdate'),
+
+    path('deletedata/<int:id>/',
+         views.deletedata,
+         name='deletedata'),
+
+    # Teacher
+    path('teacherregister/',
+         views.teacherregister,
+         name='teacherregister'),
+
+    path('teacherview/',
+         views.teacherview,
+         name='teacherview'),
+
+    path('teacheredit/<int:id>/',
+         views.teacheredit,
+         name='teacheredit'),
+
+    path('teacherupdate/<int:id>/',
+         views.teacherupdate,
+         name='teacherupdate'),
+
+    path('teacherdelete/<int:id>/',
+         views.teacherdelete,
+         name='teacherdelete'),
+]
+"""

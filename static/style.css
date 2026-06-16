@@ -1,0 +1,11 @@
+    /* Style for element with id="head2" */
+    #head2 {
+	        color: yellow;
+		    background-color: black;
+	    }
+
+	    /* Style for elements with class="class_h" */
+	    .class_h {
+		        color: red;
+			    background-color: lightgray;
+		    }

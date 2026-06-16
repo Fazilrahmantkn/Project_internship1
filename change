@@ -1,0 +1,153 @@
+diff --git a/student/templates/dataedit.html b/student/templates/dataedit.html
+index c8e0c45..abe8398 100644
+--- a/student/templates/dataedit.html
++++ b/student/templates/dataedit.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -28,3 +30,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file
+diff --git a/student/templates/student_delete.html b/student/templates/student_delete.html
+index 25b0678..a06520d 100644
+--- a/student/templates/student_delete.html
++++ b/student/templates/student_delete.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -28,3 +30,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file
+diff --git a/student/templates/student_form.html b/student/templates/student_form.html
+index c923b04..f6d4f6c 100644
+--- a/student/templates/student_form.html
++++ b/student/templates/student_form.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -22,3 +24,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file
+diff --git a/student/templates/student_list.html b/student/templates/student_list.html
+index 1275029..33ec649 100644
+--- a/student/templates/student_list.html
++++ b/student/templates/student_list.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -45,3 +47,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file
+diff --git a/student/templates/studentform.html b/student/templates/studentform.html
+index 58a2725..a509b64 100644
+--- a/student/templates/studentform.html
++++ b/student/templates/studentform.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -28,3 +30,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file
+diff --git a/student/templates/studentlist.html b/student/templates/studentlist.html
+index 4edd505..5cf7b3b 100644
+--- a/student/templates/studentlist.html
++++ b/student/templates/studentlist.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -35,3 +37,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file
+diff --git a/student/templates/teacher_delete.html b/student/templates/teacher_delete.html
+index 4ed5e76..e3b58a9 100644
+--- a/student/templates/teacher_delete.html
++++ b/student/templates/teacher_delete.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -28,3 +30,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file
+diff --git a/student/templates/teacher_form.html b/student/templates/teacher_form.html
+index 30d77ac..fa14429 100644
+--- a/student/templates/teacher_form.html
++++ b/student/templates/teacher_form.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -22,3 +24,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file
+diff --git a/student/templates/teacher_list.html b/student/templates/teacher_list.html
+index af77419..27d2a41 100644
+--- a/student/templates/teacher_list.html
++++ b/student/templates/teacher_list.html
+@@ -1,3 +1,5 @@
++{% extends 'base.html' %}
++{% block content %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+@@ -45,3 +47,5 @@
+ 
+ </body>
+ </html>
++
++{% endblock %}
+\ No newline at end of file

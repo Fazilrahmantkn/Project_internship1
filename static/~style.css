@@ -1,13 +1,4 @@
-{% extends 'base.html' %}
-{% block content %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Student List</title>
-</head>
-<body>
 
-<h2>Student List</h2>
 
 <table border="1">
     <tr>
@@ -37,5 +28,3 @@
 
 </body>
 </html>
-
-{% endblock %}
