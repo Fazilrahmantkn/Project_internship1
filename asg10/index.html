@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Assignments 1-15 + Lab Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>JavaScript Assignments Collection</h1>
+
+<div class="section"><h2>1. Student Name Display</h2><input id="studentName"><button onclick="showName()">Show Name</button><p id="nameResult"></p></div>
+
+<div class="section"><h2>2. Student Age Checker</h2><input type="number" id="age"><button onclick="checkAge()">Check Age</button><p id="ageResult"></p></div>
+
+<div class="section"><h2>3. Addition Calculator</h2><input type="number" id="num1"><input type="number" id="num2"><button onclick="addNumbers()">Add</button><p id="addResult"></p></div>
+
+<div class="section"><h2>4. Student Marks Calculator</h2><input type="number" id="eng" placeholder="English"><input type="number" id="math" placeholder="Maths"><input type="number" id="sci" placeholder="Science"><button onclick="calculateMarks()">Calculate</button><p id="marksResult"></p></div>
+
+<div class="section"><h2>5. Greeting Function</h2><button onclick="greetStudent()">Greet</button><p id="greetResult"></p></div>
+
+<div class="section"><h2>6. Change Heading Text</h2><h3 id="title">Student Portal</h3><button onclick="changeText()">Change</button></div>
+
+<div class="section"><h2>7. Background Color</h2><button onclick="changeColor('red')">Red</button><button onclick="changeColor('green')">Green</button><button onclick="changeColor('blue')">Blue</button></div>
+
+<div class="section"><h2>8. Even/Odd</h2><input type="number" id="evenOdd"><button onclick="checkEvenOdd()">Check</button><p id="evenOddResult"></p></div>
+
+<div class="section"><h2>9. Grade System</h2><input type="number" id="gradeMarks"><button onclick="calculateGrade()">Grade</button><p id="gradeResult"></p></div>
+
+<div class="section"><h2>10. Attendance</h2><button onclick="markAttendance()">Mark Present</button><p id="attendanceResult"></p></div>
+
+<div class="section"><h2>11. Character Counter</h2><input id="charInput" onkeyup="countCharacters()"><p id="charResult">Characters: 0</p></div>
+
+<div class="section"><h2>12. Student Information Card</h2><input id="infoName" placeholder="Name"><input id="roll" placeholder="Roll"><input id="course" placeholder="Course"><button onclick="showStudentInfo()">Display</button><div id="infoResult"></div></div>
+
+<div class="section"><h2>13. Temperature Converter</h2><input type="number" id="celsius"><button onclick="convertTemperature()">Convert</button><p id="tempResult"></p></div>
+
+<div class="section"><h2>14. Password Toggle</h2><input type="password" id="password"><button onclick="togglePassword()">Show/Hide</button></div>
+
+<div class="section"><h2>15. Registration Form</h2><input id="regName" placeholder="Name"><input type="number" id="regAge" placeholder="Age"><input id="regCourse" placeholder="Course"><button onclick="registerStudent()">Register</button><div id="regResult"></div></div>
+
+<div class="section"><h2>Lab Test</h2><input id="labName" placeholder="Student Name"><input type="number" id="m1" placeholder="Subject 1"><input type="number" id="m2" placeholder="Subject 2"><input type="number" id="m3" placeholder="Subject 3"><button onclick="calculateResult()">Calculate Result</button><div id="labResult"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
