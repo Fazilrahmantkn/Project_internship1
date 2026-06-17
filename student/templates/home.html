@@ -1,13 +1,54 @@
+
 {% extends 'base.html' %}
+
 {% block content %}
-<section class="hero">
-<h1>Welcome to Student Teacher Management System</h1>
-<p>Manage student and teacher records efficiently.</p>
-<a href="{% url 'studyview' %}" class="btn">Get Started</a>
-</section>
+
 <section class="features">
-<div class="card"><h3>Students</h3><p>Add, update and manage student information.</p></div>
-<div class="card"><h3>Teachers</h3><p>Add, update and manage teacher information.</p></div>
-<div class="card"><h3>Administration</h3><p>Maintain academic records efficiently.</p></div>
+
+    <div class="card">
+
+        <h3>Students</h3>
+
+        <p>
+            View and manage student records.
+        </p>
+
+        <a href="{% url 'student_list' %}"
+           class="btn">
+            Student List
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Teachers</h3>
+
+        <p>
+            View and manage teacher records.
+        </p>
+
+        <a href="{% url 'teacher_list' %}"
+           class="btn">
+            Teacher List
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Administration</h3>
+
+        <p>
+            Open Django Admin Panel.
+        </p>
+
+        <a href="/admin/"
+           class="btn">
+            Open Admin
+        </a>
+
+    </div>
+
 </section>
 {% endblock %}
