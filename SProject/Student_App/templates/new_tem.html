@@ -1,0 +1,100 @@
+
+views.py
+def studyview(request):
+    a=Studymodel.objects.all()
+    return render (request,"studyview.html",{"sview":a})
+
+html
+<!-- <table>
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+        </tr>
+        {% for i in sview %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.email}}</td>
+            <td><a href="del/{{i.id}}">DELETE</a></td>
+            <td><a href="edit/{{i.id}}">EDIT</a></td>
+           
+        </tr>
+        {% endfor %} -->
+
+       
+<!-- </table> -->
+ID Name   age  email         
+1 Anjali 20 anjali@gmail.com delete edit
+2 Amala  30 amala@gmail.com  delete edit
+
+
+<!-- model - makemigrations+ migrate -->
+ <!-- views - function (to view all data in the database) -->
+  <!-- url  for the view function -->
+   <!-- templates/html -->
+
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form method="POST">
+        <!-- cross site request forgery middleware-->
+        {% csrf_token %}
+
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="emailid" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<body>
+
+    <h2>Edit Student</h2>
+
+    <form method="POST" action="{% url 'dataupdate' edit.id %}">
+        {% csrf_token %}
+
+        <label>Name:</label>
+        <input type="text" name="name" value="{{ edit.name }}" required>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" value="{{ edit.age }}" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ edit.email }}" required>
+        <br><br>
+
+        <input type="submit" value="Update">
+    </form>
+
+    <br>
+    <a href="{% url 'studyview' %}">Back to Student List</a>
+
+</body>
+</html>

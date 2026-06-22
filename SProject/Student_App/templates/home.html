@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero">
+
+    <h1>🏫 School Management System</h1>
+
+    <p>
+        Manage students, teachers, attendance,
+        academics and administration efficiently.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="{% url 'student_list' %}" class="btn">
+            Manage Students
+        </a>
+
+        <a href="{% url 'teacher_list' %}" class="btn">
+            Manage Teachers
+        </a>
+    </div>
+
+</div>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>{{ student_count }}</h2>
+        <p>Total Students</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ teacher_count }}</h2>
+        <p>Total Teachers</p>
+    </div>
+
+    <div class="card">
+        <h2>100%</h2>
+        <p>School Management</p>
+    </div>
+
+</div>
+
+<div class="features">
+
+    <div class="feature-box">
+        <h3>👨‍🎓 Student Records</h3>
+        <p>
+            Maintain student profiles,
+            contact details and academic records.
+        </p>
+    </div>
+
+    <div class="feature-box">
+        <h3>👩‍🏫 Teacher Management</h3>
+        <p>
+            Manage teacher information,
+            subjects and salary details.
+        </p>
+    </div>
+
+    <div class="feature-box">
+        <h3>📊 Reports</h3>
+        <p>
+            Generate reports and monitor
+            school performance.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

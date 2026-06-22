@@ -1,0 +1,40 @@
+asgiref==3.11.1
+audioop-lts==0.2.2
+av==17.1.0
+beautifulsoup4==4.15.0
+click==8.4.1
+cloup==3.1.0
+decorator==5.3.1
+Django==6.0.6
+django-filter==25.2
+djangorestframework==3.17.1
+glcontext==3.0.0
+isosurfaces==0.1.2
+#manim @ file:///home/builder/.termux-build/manim/src
+ManimPango==0.6.1
+mapbox_earcut==2.0.0
+Markdown==3.10.2
+markdown-it-py==4.2.0
+mdurl==0.1.2
+moderngl==5.12.0
+moderngl-window==3.1.1
+networkx==3.6.1
+#numpy @ file:///home/builder/.termux-build/python-numpy/src/dist/numpy-2.4.4-cp313-cp313-android_aarch64.whl#sha256=b9a4731d6bfc5c469dd2fd61e327c90748ee544201108b102775549269faeda3
+#pillow @ file:///home/builder/.termux-build/python-pillow/src
+pycairo==1.29.0
+pydub==0.25.1
+pyglet==2.1.14
+pyglm==2.8.3
+Pygments==2.20.0
+rich==15.0.0
+#scipy @ file:///home/builder/.termux-build/python-scipy/src/dist/scipy-1.17.1-cp313-cp313-android_aarch64.whl#sha256=68e22d5f7543c509616910d502e3ece2208ed0f962f8f7b0b81c263ca344571b
+screeninfo==0.8.1
+#skia-pathops @ file:///home/builder/.termux-build/python-skia-pathops/src
+soupsieve==2.8.4
+sqlparse==0.5.5
+srt==3.5.3
+svgelements==1.9.6
+tqdm==4.68.2
+typing_extensions==4.15.0
+tzdata==2026.2
+watchdog==6.0.0

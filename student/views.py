@@ -10,8 +10,34 @@ from django.views.generic import (
 
 from .models import Student, Teacher
 from django.http import HttpResponse
+from .serializers import *
+from rest_framework import generics
+
+# to get and post all data---read and create
+
+class StudentListCreateView(generics.ListCreateAPIView):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
 
 
+# to get single object data, put and update and delete object
+
+class StudentRetrieveUpdateDelete(generics.RetrieveDestroyAPIView):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+
+# to get and post all data---read and create
+
+class TeacherListCreateView(generics.ListCreateAPIView):
+    queryset = Teacher.objects.all()
+    serializer_class = TeacherSerializer
+
+
+# to get single object data, put and update and delete object
+
+class TeacherRetrieveUpdateDelete(generics.RetrieveDestroyAPIView):
+    queryset = Teacher.objects.all()
+    serializer_class = TeacherSerializer
 def new(request):
     p = 'python language'
     k = [10, 20, 30, 5, 50]
@@ -20,10 +46,6 @@ def new(request):
     return HttpResponse("Hello World")
 
 
-# ---------------- STUDENT ----------------
-from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponse
-from .models import Student, Teacher
 
 # ========== STUDENT VIEWS ==========
 """

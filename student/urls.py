@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-
+#from .views import 
 urlpatterns = [
     path('', views.home, name='home'),
 
@@ -13,6 +13,22 @@ urlpatterns = [
     path('edit/<int:id>/', views.editdata, name='edit'),
     path('update/<int:id>/', views.dataupdate, name='update'),
 
+    path(
+        'apistudent-list/',
+        views.StudentListCreateView.as_view()
+    ),
+    path(
+        'apistudent/<int:id>/',
+        views.StudentRetrieveUpdateDelete.as_view()
+    ),
+    path(
+        'apiteacher/',
+        views.TeacherListCreateView.as_view()
+    ),
+    path(
+        'apiteacher/<int:id>',
+        views.TeacherRetrieveUpdateDelete.as_view()
+    ),
     path(
         'student-list/',
         views.StudentListView.as_view(),
